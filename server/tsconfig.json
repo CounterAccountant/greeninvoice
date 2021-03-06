@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "suppressExcessPropertyErrors": false,
+    "target": "es2016",
+    "module": "commonjs",
+    "lib": [ "es2016" ],
+    "allowJs": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+
+  },
+  "exclude": [
+    "./old_models",
+    "./starter.ts",
+    "./dist"
+  ]
+}

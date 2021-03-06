@@ -1,0 +1,23 @@
+{
+    "name": "greeninvoice",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "up": "docker-compose up",
+        "build": "docker-compose build",
+        "build:server": "rm -rf server/.env && cp .env server/.env",
+        "all": "yarn build:server && yarn build && yarn up",
+        "install": "cd server/ && yarn && cd .. && yarn all"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://AdiIluz@bitbucket.org/AdiIluz/otzar.git"
+    },
+    "author": "Adi Iluz",
+    "license": "ISC",
+    "homepage": "https://bitbucket.org/AdiIluz/otzar#readme",
+    "dependencies": {
+        "csvtojson": "^2.0.10"
+    }
+}
